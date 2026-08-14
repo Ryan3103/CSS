@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+form {
+    margin: 100px;
+    color: white;
+    background-color: rgb(27, 25, 25);
+    border: 1px solid rgb(198, 0, 248);
+    border-radius: 3px;
+    padding: 80px 60px;
+    box-shadow: 2px 2px 2px rgb(198, 0, 248);
+    
+}
+
+input {
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(198, 0, 248);
+    border-radius: 3px;
+    padding: 10px 5px;
+}
+
+
+.cadastrar {
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(198, 0, 248);
+    border-radius: 3px;
+    padding: 10px;
+    transition: .3s;
+    width: 100%;
+}
+
+.cadastrar:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+select {
+    color: white;
+     background-color: black;
+    border: 1px solid rgb(198, 0, 248);
+    border-radius: 3px;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+option {
+    color: white;
+}
+
+form div {
+    display: flex;
+   flex-direction: column;
+   gap: 5px;
+   margin: 20px;
+    
+}
