@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+    color: gray;
+}
+
+.plataforma {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 10px;
+    
+}
+
+.plataforma li {
+    border: 1px solid rgb(162, 0, 255);
+    border-radius: 50px;
+    padding: 20px 20px ;
+    
+   
+}
+
+.plataforma li:hover {
+    background-color: rgb(162, 0, 255);
+    color: white;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.favorito {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 15px 10px;
+    border: 1px solid rgb(162, 0, 255);
+}
+
+button:hover {
+    background-color: rgb(162, 0, 255);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.jogos {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.jogos li {
+    border: 1px solid rgb(162, 0, 255);
+    border-radius: 5px;
+    padding: 130px 125px;
+    margin: 15px;
+    box-shadow: 2px 1px 3px rgb(162, 0, 255) ;
+    
+}
+
+.jogos li:hover {
+    background-color: rgb(162, 0, 255);
+    transition: .2s;
+    transform: scale(1.05);
+}
