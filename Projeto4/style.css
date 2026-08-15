@@ -1,0 +1,78 @@
+body {
+    background-color: #F7F7F2;
+    color: #121113;
+}
+
+
+.jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: 500px;
+}
+
+.jogo div {
+    text-align: center;
+    border: 1px solid #222725;
+    border-radius: 3px;
+    background-color: #E4E6C3;
+    padding: 50px 80px;
+}
+
+.jogo p{
+    margin: 15px;
+    max-width: 400px;
+}
+
+button {
+    background-color: #899878;
+    border: 1px solid #222725;
+    color: #F7F7F2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    transition: .3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222725;
+    color: #F7F7F2;
+    transform: scale(1.1);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.personagens ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.personagens li {
+    border: 1px solid #222725;
+    border-radius: 3px;
+    padding: 50px 25px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.personagens li:hover {
+    background-color: #222725;
+    color: #E4E6C3;
+    transform: scale(1.05);
+    
+}
+
+@media (max-width: 600px) {
+    .personagens ul {
+        grid-template-columns: 1fr;
+    }
+}
