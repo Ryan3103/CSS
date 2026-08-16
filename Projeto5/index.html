@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox - Eixos</title>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .container {
+        display: flex;
+        height: 300px;
+        width: 500px;
+        background-color: lightgray;
+        border: 2px solid black;
+        margin-bottom: 30px;
+
+       
+        flex-direction: row;
+
+        
+        justify-content: center;
+        
+    }
+
+    .item {
+        width: 60px;
+        height: 60px;
+        background-color: tomato;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h3>Container 1 (edite o CSS e recarregue)</h3>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+
+</body>
+</html>
