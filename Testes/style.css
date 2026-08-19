@@ -1,27 +1,54 @@
-.produtos {
-    flex-wrap: wrap;
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 15px;
+    box-shadow: 0 0 5px black;
+}
+
+.container {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 100vh;
+    flex-direction: column;
 }
 
-.produto {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+.inf {
+    padding: 2rem;
     text-align: center;
-    height: 200px;
-    width: 150px;
-    border: 1px solid black;
     border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 5px black;
+    transition: .2s;
+}
+
+.inf:hover {
+    background-color: rgb(177, 170, 170);
+    transform: scale(1.1);
 }
 
 button {
-    background-color: aqua;
-    border: none;
-    border-radius: 5px;
     padding: .5rem;
+    border-radius: .4rem;
+    margin: 5px;
+    background-color: black;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.git:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.link:hover {
+    background-color: rgb(2, 159, 250);
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
