@@ -1,48 +1,82 @@
-body {
-    background-color: rgb(248, 248, 102);
-}
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 250px;
+    grid-template-rows: 200px 1fr 200px;
+    border: 1px solid black;
 }
 
 .card {
-    height: 480px;
-    width: 280px;
-    background-color: white;
-    padding: .5rem;
-    text-align: start;
     border: 1px solid black;
-    border-radius: .5rem;
-    box-shadow: 3px 3px 3px black;
-}
-
-.desenho {
-    height: 200px;
-    width: 100%;
-    border-radius: .5rem;
-}
-
-h3 {
-    text-align: center;
-    background-color: rgb(247, 247, 42);
-    width: 100px;
-    border-radius: .5rem;
-}
-
-.conjunto {
+    padding: 16px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    
+    justify-content: center;
 }
 
-.ryan {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+header {
+    grid-column: 1 / 4;
+    border: 1px solid black;
+}
+
+.sidebar {
+    border: 1px solid black;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+
+main {
+    border: 1px solid black;
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+}
+
+aside {
+    border: 1px solid black;
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+}
+
+footer {
+    grid-column: 1 / 4;
+    border: 1px solid black;
+}
+
+
+  @media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto auto 100px;
+    }
+
+    header {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .sidebar {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    main {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    aside {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    footer {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
 }
